@@ -1,4 +1,5 @@
 function pingProblemChecker(req, res) {
+    console.log("Pinged Problem Controller");
     return res.json({ message: 'Ping controller is up' } );
 }
 

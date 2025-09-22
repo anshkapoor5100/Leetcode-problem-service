@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const apiRouter = require('./routes');
-
 const { PORT } = require('./config/server.config');
 const app = express();
 app.use(bodyParser.json());
@@ -13,7 +12,6 @@ app.use('/api', apiRouter);
 app.get('/ping', (req, res) => {
     res.send('Problem Service is alive');
 });
-
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
