@@ -1,11 +1,18 @@
+const NotImplemented = require("../errors/notimplemented.error");
+
 function pingProblemChecker(req, res) {
     console.log("Pinged Problem Controller");
     return res.json({ message: 'Ping controller is up' } );
 }
 
 
-function addProblem(req, res) {
-    
+function addProblem(req, res,next) {
+    try{
+
+    }
+    catch(err){
+        throw new NotImplemented("addProblem" );
+    }
 }
 function getProblem(req, res) {
     
