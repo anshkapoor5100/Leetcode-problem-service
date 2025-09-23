@@ -8,23 +8,43 @@ function pingProblemChecker(req, res) {
 
 function addProblem(req, res,next) {
     try{
-
+        throw new NotImplemented("addProblem" );
     }
     catch(err){
-        throw new NotImplemented("addProblem" );
+        next(err);
     }
 }
 function getProblem(req, res) {
-    
+    try{
+        throw new NotImplemented("addProblem" );
+    }
+    catch(err){
+        next(err);
+    }
 }
 function getProblems(req, res) {
-    
+    try{
+        throw new NotImplemented("addProblem" );
+    }
+    catch(err){
+        next(err);
+    }
 }
 function deleteProblem(req, res) {
-    
+    try{
+        throw new NotImplemented("addProblem" );
+    }
+    catch(err){
+        next(err);
+    }
 }
 function updateProblem(req, res) {
-    
+    try{
+        throw new NotImplemented("addProblem" );
+    }
+    catch(err){
+        next(err);
+    }
 }
 
 module.exports = {
