@@ -24,7 +24,4 @@ class ProblemService{
         return problem;
     }
 }
-
-module.exports = {
-    ProblemService: ProblemService,
-}
+module.exports = ProblemService;
