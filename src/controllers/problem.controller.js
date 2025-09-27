@@ -13,7 +13,7 @@ async function addProblem(req, res,next) {
     try{
         const newProblem = await problemService.createProblem(req.body);
         return res.status(StatusCodes.CREATED).json({
-            succcess: true,
+            success: true,
             message: "Successfully created the problem",
             data: newProblem,
             error: {}
@@ -27,7 +27,7 @@ async function getProblem(req, res,next) {
     try{
         const response = await problemService.getProblemById(req.params.id);
         return res.status(StatusCodes.OK).json({
-            succcess: true,
+            success: true,
             message: "Successfully fetched the problem",
             data: response,
             error: {}
@@ -41,7 +41,7 @@ async function getProblems(req, res,next) {
     try{
         const response = await problemService.getAllProblems();
         return res.status(StatusCodes.OK).json({
-            succcess: true,
+            success: true,
             message: "Successfully fetched all problems",
             data: response,
             error: {}

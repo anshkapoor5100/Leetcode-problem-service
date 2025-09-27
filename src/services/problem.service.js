@@ -1,4 +1,4 @@
-const { markdownSanitizer } = require("../utils");
+const { markdownSanitizer } = require("../utils"); // markdownSanitizer is an object { sanitizeMarkdown: [Function] }
 
 class ProblemService{
     constructor(ProblemRepository){
@@ -6,7 +6,6 @@ class ProblemService{
     }
 
     async createProblem(problemData) {
-        problemData.description = markdownSanitizer(problemData.description);
         const problem = await this.problemRepository.createProblem(problemData);
         return problem;
     }
